@@ -8,9 +8,6 @@ on:
 jobs:
   tests:
     runs-on: ubuntu-latest
-    steps:
-      - name: Execute tests
-        run: exit 0
     services:
       postgres:
         image: postgres:13.10
@@ -70,9 +67,6 @@ jobs:
 
   frontend_tests:
     runs-on: ubuntu-latest
-    steps:
-      - name: Execute tests
-        run: exit 0
 
     steps:
     - uses: actions/checkout@v3
