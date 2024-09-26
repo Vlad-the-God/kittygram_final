@@ -9,6 +9,8 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
   backend:
+    depends_on:
+      - db
     image: clowngigolo/kittygram_backend
     env_file: .env
     volumes:
@@ -20,6 +22,9 @@ services:
     volumes:
       - static:/frontend_static
   gateway:
+    depends_on:
+      - backend
+      - frontend
     image: clowngigolo/kittygram_gateway
     env_file: .env
     volumes:
