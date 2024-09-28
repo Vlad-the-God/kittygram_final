@@ -11,7 +11,7 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv('SECRET_KEY') if not None else get_random_secret_key()
+SECRET_KEY = os.getenv('SECRET_KEY') if os.getenv('SECRET_KEY') else get_random_secret_key()
 
 DEBUG = check_debug(os.getenv('DEBUG'))
 
