@@ -5,7 +5,7 @@ from django.core.management.utils import get_random_secret_key
 from dotenv import load_dotenv
 
 from pathlib import Path
-from utils import check_debug
+from kittygram_backend.utils import check_debug
 
 load_dotenv()
 
@@ -107,7 +107,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'collected_static'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/var/www/kittygram_final/media/'
+MEDIA_ROOT = '/media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

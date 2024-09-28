@@ -4,7 +4,7 @@
 
 ## Стек
 
-Python, Django, Api,Docker, CI/CD, GitHub Actions
+Python, Django, DRF, Docker, CI/CD, GitHub Actions
 
 ## Как запустить проект:
 
@@ -75,6 +75,9 @@ POSTGRES_PASSWORD=password
 POSTGRES_DB=kittygram
 DB_HOST=db
 DB_PORT=5432
+SECRET_KEY='django-insecure-cg6*%51d6ef8f#4!r3*$vmxm4)ajwbg8mo!4y-q*uq1!4$-98$'
+ALLOWED_HOSTS='127.0.0.1, localhost'
+DEBUG='True'
 
 ## Автор:
 
